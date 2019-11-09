@@ -1,0 +1,9 @@
+<ul>
+    <li>{{nom}}</li><span>reference: {{reference}}</span>
+     <input type="text" value="{{prix}}">
+     <span>etat: {{repare}} 
+         <span *ngIf='repare=="endommagé"'>
+              <input type="button" value="réparer" (click)="reparation()">
+            </span>
+        </span> 
+</ul>

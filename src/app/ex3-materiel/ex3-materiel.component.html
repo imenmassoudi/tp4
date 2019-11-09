@@ -1,0 +1,8 @@
+<ul>
+    <li [ngClass]="{'list-group-item':true,'list-group-item-success': nom=='Ecran' || nom=='Imprimante'}">
+      <span [ngClass]="{'font-weight-bold': nom=='Ecran' || nom=='Imprimante'}">{{nom}} </span><br> {{reference}} <input type="text" value="{{prix}}"> Etat {{repare}}
+            <button *ngIf="repare=='endommagé'" (click)="onReparer()" class="btn btn-success"> 
+                Réparer
+            </button>          
+   </li>
+</ul>

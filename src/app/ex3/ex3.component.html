@@ -1,0 +1,5 @@
+<h1>Liste du matériel</h1>
+<ng-container *ngFor="let t of tab">
+    <app-ex3-materiel [nom]="t.nom" [reference]="t.reference" [image]="t.image" [prix]="t.prix" [repare]="t.repare">
+    </app-ex3-materiel>
+</ng-container>
